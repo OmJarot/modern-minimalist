@@ -396,21 +396,274 @@ body {
     color: #666666;
 }
 
-/* ================================
-   DESKTOP
-================================ */
+@media (max-width: 768px) {
 
-/*@media (min-width: 1200px) {*/
+    /* HERO */
+    .hero {
+        min-height: 600px;
+        background-position: center center;
+    }
 
-/*    .hero-content {*/
-/*        transform: translateY(8px);*/
-/*    }*/
+    .hero-content {
+        padding: 40px 20px 80px;
+        gap: 16px;
+    }
 
-/*    .hero h1 {*/
-/*        font-size: 76px;*/
-/*    }*/
+    .subtitle {
+        font-size: 14px;
+    }
 
-/*    .description {*/
-/*        font-size: 11px;*/
-/*    }*/
-/*}*/
+    .hero h1 {
+        font-size: clamp(48px, 12vw, 64px);
+        letter-spacing: -1.5px;
+    }
+
+    .date {
+        font-size: 16px;
+    }
+
+    .description {
+        max-width: 500px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .open-button {
+        width: 180px;
+        height: 44px;
+    }
+
+
+    /* PROFILE SECTION */
+    .section-profile {
+        min-height: auto;
+        padding: 80px 20px 80px;
+    }
+
+    .section-label {
+        margin-bottom: 12px;
+        font-size: 13px;
+    }
+
+    .section-profile h2,
+    .section-schedule h2 {
+        margin-bottom: 14px;
+        font-size: 38px;
+    }
+
+    .section-description {
+        max-width: 500px;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* COUPLE */
+    .couple-profile {
+        max-width: 500px;
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+
+        padding: 50px 0 20px;
+    }
+
+    .couple-photo {
+        width: 260px;
+        height: 350px;
+
+        margin-bottom: 22px;
+
+        border-radius: 180px;
+    }
+
+    .couple-info h3 {
+        font-size: 30px;
+    }
+
+    .couple-info span {
+        font-size: 10px;
+    }
+
+    .couple-info p {
+        max-width: 300px;
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .couple-social {
+        margin-top: 18px;
+    }
+
+
+    /* SCHEDULE */
+    /*.schedule {*/
+    /*    padding: 0 20px;*/
+    /*}*/
+    .schedule-group {
+        max-width: 600px;
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding: 40px 0 70px;
+    }
+
+    .schedule-card {
+        padding: 28px 25px;
+    }
+
+    .schedule-card > p:first-child {
+        font-size: 13px;
+        letter-spacing: 1.7px;
+    }
+
+    .schedule-card h3 {
+        font-size: 30px;
+    }
+
+    .schedule-card span {
+        font-size: 14px;
+    }
+
+    .schedule-card > p:last-child {
+        font-size: 14px;
+    }
+}
+
+
+/* ========================================
+   MOBILE SMALL
+======================================== */
+
+@media (max-width: 480px) {
+
+    /* HERO */
+    .hero {
+        min-height: 560px;
+    }
+
+    .hero-content {
+        padding: 30px 18px 60px;
+        gap: 14px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        letter-spacing: -1px;
+    }
+
+    .date {
+        font-size: 14px;
+    }
+
+    .description {
+        max-width: 330px;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .open-button {
+        width: 170px;
+        height: 42px;
+        font-size: 11px;
+    }
+
+
+    /* PROFILE */
+    .section-profile {
+        padding: 70px 18px 70px;
+    }
+
+    .section-label {
+        font-size: 12px;
+    }
+
+    .section-profile h2,
+    .section-schedule h2 {
+        font-size: 34px;
+    }
+
+    .section-description {
+        font-size: 13px;
+        max-width: 340px;
+    }
+
+
+    /* COUPLE */
+    .couple-profile {
+        gap: 55px;
+        padding-top: 40px;
+    }
+
+    .couple-photo {
+        width: 220px;
+        height: 300px;
+
+        border-radius: 150px;
+    }
+
+    .couple-info h3 {
+        font-size: 28px;
+    }
+
+    .couple-info span {
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 9px;
+        line-height: 1.5;
+    }
+
+    .couple-info p {
+        max-width: 280px;
+        font-size: 12px;
+    }
+
+    .couple-social a {
+        width: 32px;
+        height: 32px;
+        font-size: 13px;
+    }
+
+
+    /* SCHEDULE */
+    /*.schedule {*/
+    /*    padding: 0 15px;*/
+    /*}*/
+    .schedule-group {
+        gap: 20px;
+        padding: 35px 0 60px;
+    }
+
+    .schedule-card {
+        padding: 25px 20px;
+        border-radius: 10px;
+    }
+
+    .schedule-card > p:first-child {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .schedule-card h3 {
+        font-size: 28px;
+        margin-bottom: 18px;
+    }
+
+    .schedule-card span {
+        font-size: 13px;
+    }
+
+    .schedule-card > p:last-child {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+}
